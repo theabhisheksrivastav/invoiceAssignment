@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Invoice Generator</h1>
+        <form id="invoice-form">
+            <div id="seller-details">
+                <h2>Seller Details</h2>
+                <div class="input-group">
+                    <label for="seller-name">Name</label>
+                    <input type="text" id="seller-name" name="seller-name" >
+                    <div class="address-details" id="seller-address">
+                        <label for="seller-address" id="address-details-label">Address</label>
+                        <div id="seller-address-state">
+                            <label for="seller-address-state">State</label>
+                            <input type="text" id="seller-address-state" name="seller-address-state" > 
+                        </div>
+                        <div id="seller-address-city">
+                            <label for="seller-address-city">City</label> 
+                            <input type="text" id="seller-address-city" name="seller-address-city" >
+                        </div>
+                        <div id="seller-address-street">
+                            <label for="seller-address-street" name="seller-address-street">Street</label>
+                            <input type="text" id="seller-address-street" name="seller-address-street" >
+                        </div>
+                        <div id="seller-address-pincode">
+                            <label for="seller-address-pincode">Pincode</label>
+                            <input type="text" id="seller-address-pincode" name="seller-address-pincode" >
+                        </div>
+                        <div id="seller-address-pan">
+                            <label for="seller-pan" name="seller-pan">Pan Card Number</label>
+                            <input type="text" id="seller-pan" name="seller-pan" >
+                        </div>
+                        <div id="seller-address-gst">
+                            <label for="seller-gst" name="seller-gst">Gst Number</label>
+                            <input type="text" id="seller-gst" name="seller-gst" >
+                        </div>
+                        <div id="seller-address-place">
+                            <label for="placeofsupply" name="placeofsupply">Place of Supply</label>
+                            <input type="text" id="placeofsupply" name="placeofsupply" >    
+                        </div>               
+                    </div>
+                </div>
+            </div>
+            <div id="billing-details">
+                <h2>Billing Details</h2>
+                <div class="input-group">
+                    <label for="billing-name">Name</label>
+                    <input type="text" id="billing-name" name="billing-name" >
+                    <div class="address-details" id="billing-address">
+                        <label for="billing-address" id="address-details-label">Address</label>
+                        <div id="billing-address-state">
+                            <label for="billing-address-state">State</label>
+                            <input type="text" id="billing-address-state" name="billing-address-state" > 
+                        </div>
+                        <div id="billing-address-city">
+                            <label for="billing-address-city">City</label> 
+                            <input type="text" id="billing-address-city" name="billing-address-city" >
+                        </div>
+                        <div id="billing-address-street">
+                            <label for="billing-address-street" name="billing-address-street">Street</label>
+                            <input type="text" id="billing-address-street" name="billing-address-street" >
+                        </div>
+                        <div id="billing-address-pincode">
+                            <label for="billing-address-pincode">Pincode</label>
+                            <input type="text" id="billing-address-pincode" name="billing-address-pincode" >
+                        </div>            
+                    </div>
+                </div>
+            </div>
+            <div id="shipping-details">
+                <h2>Shipping Details</h2>
+                <div class="input-group">
+                    <label for="shipping-name">Name</label>
+                    <input type="text" id="shipping-name" name="shipping-name" >
+                    <div class="address-details" id="shipping-address">
+                        <label for="shipping-address" id="address-details-label">Address</label>
+                        <div id="shipping-address-state">
+                            <label for="shipping-address-state">State</label>
+                            <input type="text" id="shipping-address-state" name="shipping-address-state" > 
+                        </div>
+                        <div id="shipping-address-city">
+                            <label for="shipping-address-city">City</label> 
+                            <input type="text" id="shipping-address-city" name="shipping-address-city" >
+                        </div>
+                        <div id="shipping-address-street">
+                            <label for="shipping-address-street" name="shipping-address-street">Street</label>
+                            <input type="text" id="shipping-address-street" name="shipping-address-street" >
+                        </div>
+                        <div id="shipping-address-pincode">
+                            <label for="shipping-address-pincode">Pincode</label>
+                            <input type="text" id="shipping-address-pincode" name="shipping-address-pincode" >
+                        </div>
+                        <div id="shipping-address-place">
+                            <label for="placeofdelivery" name="placeofdelivery">Place of Supply</label>
+                            <input type="text" id="placeofdelivery" name="placeofdelivery" >    
+                        </div>               
+                    </div>
+                </div>
+            </div>
+            <div id="order-details">
+                <h2>Order Details</h2>
+                <div class="input-group">
+                    <label for="order-id">Order ID</label>
+                    <input type="text" id="order-id" name="order-id" >
+                    <label for="order-date">Order Date</label>
+                    <input type="date" id="order-date" name="order-date" >
+                </div>
+            </div>
+            <div id="invoice-details">
+                <h2>Invoice Details</h2>
+                <div class="input-group">
+                    <label for="invoice-id">Invoice ID</label>
+                    <input type="text" id="invoice-id" name="invoice-id" >
+                    <div id="invoice-date">
+                        <label for="invoice-date">Invoice Date</label>
+                        <input type="date" id="invoice-date" name="invoice-date" >
+                        <label for="invoice-due-date">Invoice Due Date</label>
+                        <input type="date" id="invoice-due-date" name="invoice-due-date" >
+                    </div>
+                    <label for="invoice-reverse-charge">Return Chrage</label>
+                    <input type="radio" name="return-charge" id="return-charge">
+                </div>
+            </div>
+            <div id="product-details">
+                <h2>Product Details</h2>
+                <div class="input-group">
+                    <label for="product-name">Product Name</label>
+                    <input type="text" id="product-name" name="product-name" >
+                    <label for="product-quantity">Product Quantity</label>
+                    <input type="text" id="product-quantity" name="product-quantity" >
+                    <label for="product-price">Product Price</label>
+                    <input type="text" id="product-price" name="product-price" >
+                    <label for="product-discount" id="product-discount">Product Discount</label>
+                    <input type="text" id="product-discount" name="product-discount">
+                </div>
+            </div>
+            <!-- <div id="payment-details">
+                <h2>Payment Details</h2>
+                <div class="input-group">
+                    <label for="payment-mode">Payment Mode</label>
+                    <input type="text" id="payment-mode" name="payment-mode" >
+                    <label for="payment-transaction-id">Transaction ID</label>
+                    <input type="text" id="payment-transaction-id" name="payment-transaction-id" >
+                    <label for="payment-date">Payment Date</label>
+                    <input type="date" id="payment-date" name="payment-date" >
+                </div>
+            </div> -->
+            <div id="signture-upload">
+                <h2>Upload Signature</h2>
+                <div class="input-group">
+                    <input type="file" id="signature" name="signature" >
+                </div>
+            </div>
+            <div id="submit-button">
+                <button type="submit" id="submit-btn">Generate Invoice</button>
+            </div>
+        </form>
+    </div>
+    <div id="invoice-preview" style="display: none;">
+        <!-- Invoice preview will be injected here -->
+    </div>
+    <div id="save-button" style="display: none;">
+        <button id="save-pdf-btn">Save as PDF</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
